@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +10,56 @@ body {
   font-family: 'Geologica', sans-serif;
 }
 
-.advice-container h4 {
+.container h4 {
   font-size: 1rem;
   text-transform: uppercase;
   color: rgb(29, 233, 56);
+  margin-bottom: 2rem;
 }
 
-.advice-container h1 {
+.container h1 {
   color: white;
+}
+.advice-box {
+  width: 30rem;
+  height: 22rem;
+  text-align: center;
+  background-color: rgb(72, 83, 95);
+  border-radius: 2rem;
+  padding: 3rem;
+}
+.divider {
+  margin-top: 30px;
+  position: relative;
+  right: 2rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 19rem;
+}
+.dice-bg {
+  width: 4rem;
+  height: 4rem;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.6rem;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.dice-container {
+  display: flex;
+  justify-content: center;
+}
+.dice {
+  cursor: pointer;
+}
+.dice-bg:hover {
+  box-shadow: 0 0 20px 10px greenyellow;
+}
+.inner-html {
+  height: 13rem;
 }
