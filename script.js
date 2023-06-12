@@ -11,7 +11,6 @@ const getAdvice = function (id, advice) {
     </h1>
     </div>`;
   insertHtml.innerHTML = html;
-  console.log(html);
 };
 
 const getAdviceData = async function () {
@@ -19,8 +18,7 @@ const getAdviceData = async function () {
   const data = await request.json();
   const id = data.slip.id;
   const advice = data.slip.advice;
-  console.log(advice);
   getAdvice(id, advice);
 };
 
-getAdviceData();
+btn.addEventListener('click', getAdviceData);
